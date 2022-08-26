@@ -1,0 +1,31 @@
+.main-section
+  background: url('../assets/main-background.jpg') no-repeat scroll center
+  color: $color-white
+  height: 100vh
+
+  &__button
+    visibility: hidden
+    background: none
+    border: none
+    padding: $m-xs
+    color: $color-white
+
+    +media-breakpoint-up(lg)
+      visibility: visible
+
+    &:hover
+      outline: 2px solid rgba($color-white, .2)
+      cursor: pointer
+      border-radius: $border-radius-sm
+
+  &__header
+    display: flex
+    justify-content: space-between
+    padding: $m-base
+
+  &__logo-icon
+    width: 30px
+
+  &__logo-wrapper
+    display: flex
+    align-items: center
