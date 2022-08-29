@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+html:focus-within
+  scroll-behavior: smooth
+
+body
+  color: $color-secondary
+  font:
+    family: $font-family-body
+    size: $font-size-base
+  line-height: $line-height-base
+
+b,
+strong
+  font-weight: $font-weight-bold
+
+a,
+button,
+input[type='button'],
+input[type='submit']
+  cursor: pointer
+
+a
+  color: $brand-primary
+
+  +hover
+    color: $brand-primary
+
+img,
+picture
+  display: block
+  max-width: 100%
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: $font-family-header
+  margin:
+    bottom: $m-base
+    top: 0
+
+p
+  margin:
+    bottom: $m-sm
+    top: 0
+
+button
+  appearance: none
+  background-color: transparent
+  border: none
+  outline: none
+  padding: 0
+
+textarea
+  resize: vertical

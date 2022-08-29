@@ -1,31 +1,45 @@
 .main-section
-  background: url('../assets/main-background.jpg') no-repeat scroll center
+  background: url('../assets/images/main-background.jpg') no-repeat scroll center
   color: $color-white
   height: 100vh
 
+  &__brand-name
+    font-weight: normal
+    margin:
+      bottom: 0
+      left: $m-sm
+
   &__button
-    visibility: hidden
-    background: none
-    border: none
-    padding: $m-xs
     color: $color-white
+    display: none
+    height: 80%
+    margin-right: $m-sm
+    min-width: 10vw
+    padding: 0 $m-xs
 
     +media-breakpoint-up(lg)
-      visibility: visible
+      display: inline-block
 
     &:hover
-      outline: 2px solid rgba($color-white, .2)
+      border: 2px solid rgba($color-white, .2)
       cursor: pointer
       border-radius: $border-radius-sm
 
+    &.-profile
+      border: 2px solid rgba($color-white, .2)
+
   &__header
+    align-items: 80%
     display: flex
     justify-content: space-between
-    padding: $m-base
+    padding: $m-sm $m-base
 
   &__logo-icon
     width: 30px
 
-  &__logo-wrapper
-    display: flex
+  &__wrapper
     align-items: center
+    display: flex
+
+  &__navigation-button
+    fill: $color-white

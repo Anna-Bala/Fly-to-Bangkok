@@ -10,16 +10,20 @@
 <body>
   <section class="main-section">
     <header class="main-section__header">
-      <div class="main-section__logo-wrapper">
-        <img alt="brand logo" class="main-section__logo-icon" src="../src/assets/logo.svg" />
-        <h1>Zabdos</h1>
+      <div class="main-section__wrapper">
+        <img alt="brand logo" class="main-section__logo-icon" src="../src/assets/icons/logo.svg" />
+        <h1 class="main-section__brand-name">Zabdos</h1>
       </div>
-
-      <nav>
-        <button class="main-section__button">Flight Status</button>
-        <button class="main-section__button">Check In</button>
-        <button class="main-section__profile-button"></button>
-        <button class="main-section__navigation-button"></button>
+      
+      <nav class="main-section__wrapper">
+        <button class="btn main-section__button">Flight Status</button>
+        <button class="btn main-section__button">Check In</button>
+        <button class="btn main-section__button -profile">
+          <img alt="navigation" src="../src/assets/icons/navigation-icon.svg" />
+        </button>
+        <button class="btn main-section__navigation-button">
+          <img alt="navigation" src="../src/assets/icons/navigation-icon.svg" />
+         </button>
       </nav>
     </header>
     <main></main>
