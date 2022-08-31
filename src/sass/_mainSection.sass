@@ -13,9 +13,9 @@
     color: $color-white
     display: none
     height: 80%
-    margin-right: $m-sm
-    min-width: 10vw
+    margin-right: $font-size-lg
     padding: 0 $m-xs
+    width: 120px
 
     +media-breakpoint-up(lg)
       display: inline-block
@@ -26,7 +26,12 @@
       border-radius: $border-radius-sm
 
     &.-profile
+      border-radius: $border-radius-base
       border: 2px solid rgba($color-white, .2)
+      height: $m-lg
+      overflow: hidden
+      padding: unset
+      width: auto
 
   &__header
     align-items: 80%
@@ -36,6 +41,11 @@
 
   &__logo-icon
     width: 30px
+
+  &__profile-picture
+    display: inline-block
+    height: $m-lg
+    width: $m-lg
 
   &__wrapper
     align-items: center
