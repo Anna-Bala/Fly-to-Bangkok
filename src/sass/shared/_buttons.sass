@@ -1,0 +1,27 @@
+.btn
+  +transition(background-color, color)
+  border: none
+    radius: $border-radius-sm
+  cursor: pointer
+  display: inline-block
+  font:
+    family: $font-family-body
+    size: $font-size-base
+    weight: $font-weight-regular
+  line-height: $line-height-base
+  padding: $m-xs $m-base
+  text-decoration: none
+
+  //----- sizes --------------------------------------------------------------------------------------------------------
+  &.-lg
+    font:
+      size: $font-size-base
+      weight: $font-weight-bold
+    letter-spacing: 1.5px
+    padding: $m-base
+    width: 100%
+
+  &.-sm
+    font-size: $font-size-xs
+    line-height: $m-base
+    padding: $m-xs $m-sm
