@@ -7,3 +7,16 @@
   transition-property: $property
   transition-duration: $transition-duration
   transition-timing-function: $transition-function
+
+=section-header
+  color: $color-black
+
+  &::before
+    border-left: 8px solid $brand-primary
+    border-radius: $border-radius-sm
+    bottom: 100%
+    content: ""
+    height: 50px
+    left: 20px
+    position: absolute
+    transform: rotateZ(90deg)

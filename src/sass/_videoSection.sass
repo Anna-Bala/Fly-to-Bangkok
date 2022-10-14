@@ -41,17 +41,7 @@
     position: relative
 
   &__main-header
-    color: $color-black
+    +section-header
     line-height: $line-height-lg * 4/5
     width: $m-2xl
     word-spacing: $m-2xl
-
-    &::before
-      border-left: 8px solid $brand-primary
-      border-radius: $border-radius-sm
-      bottom: 100%
-      content: ""
-      height: 50px
-      left: 20px
-      position: absolute
-      transform: rotateZ(90deg)

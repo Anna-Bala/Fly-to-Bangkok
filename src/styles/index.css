@@ -207,7 +207,6 @@ textarea {
 }
 .main-section__button-icon {
   background-color: #ffffff;
-  display: inline-block;
   height: inherit;
   padding: 0.5rem;
 }
@@ -237,11 +236,11 @@ textarea {
 .main-section__navigation-button {
   color: #ffffff;
   display: none;
+  font-size: 0.875rem;
   height: 80%;
   margin-right: 1.375rem;
   padding: 0 0.5rem;
   width: 120px;
-  font-size: 0.875rem;
 }
 @media (min-width: 992px) {
   .main-section__navigation-button {
@@ -281,6 +280,61 @@ textarea {
 .main-section__navigation-button {
   fill: #ffffff;
   padding: unset;
+}
+
+.services-section {
+  font-weight: 300;
+}
+.services-section__button {
+  background-color: #ffffff;
+  border-radius: 3rem;
+  padding: 1rem;
+}
+.services-section__button:hover {
+  background-color: #6c74e9;
+}
+.services-section__button:hover .services-section__icon {
+  fill: #ffffff;
+}
+.services-section__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.services-section__header-info {
+  text-align: center;
+  width: 60%;
+}
+.services-section__icon {
+  fill: #6c74e9;
+}
+.services-section__main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.services-section__main-header {
+  color: #323232;
+}
+.services-section__main-header::before {
+  border-left: 8px solid #6c74e9;
+  border-radius: 0.5rem;
+  bottom: 100%;
+  content: "";
+  height: 50px;
+  left: 20px;
+  position: absolute;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+.services-section__main-header::before {
+  left: 50%;
 }
 
 .video-section {

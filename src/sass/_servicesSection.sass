@@ -1,0 +1,37 @@
+.services-section
+  font-weight: $font-weight-light
+
+  &__button
+    background-color: $color-white
+    border-radius: $border-radius-lg
+    padding: $m-sm
+
+    &:hover
+      background-color: $brand-primary
+
+      .services-section__icon
+        fill: $color-white
+
+  &__header
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    position: relative
+
+  &__header-info
+    text-align: center
+    width: 60%
+
+  &__icon
+    fill: $brand-primary
+
+  &__main
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+
+  &__main-header
+    +section-header
+
+    &::before
+      left: 50%
