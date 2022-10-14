@@ -1,0 +1,57 @@
+.video-section
+  display: flex
+  font-weight: $font-weight-light
+  justify-content: space-between
+  padding: $m-xl
+
+  hr
+    border-color: $brand-secondary
+    border-radius: $border-radius-base
+    margin: $m-base 0
+    opacity: .1
+
+  &__card
+    background-color: $color-white
+    margin: 0 $m-xs
+
+  &__card-info
+    font-size: $font-size-xs
+    margin: unset
+    text-transform: uppercase
+
+  &__card-info-wrapper
+    width: fit-content
+
+    hr
+      margin: $m-xs 0
+
+  &__card-title
+    color: $color-black
+    margin: 0
+
+  &__card-wrapper
+    display: flex
+    flex-direction: column
+    padding: $m-sm $m-base
+
+  &__column
+    display: flex
+    flex-direction: column
+    flex: 1
+    position: relative
+
+  &__main-header
+    color: $color-black
+    line-height: $line-height-lg * 4/5
+    width: $m-2xl
+    word-spacing: $m-2xl
+
+    &::before
+      border-left: 8px solid $brand-primary
+      border-radius: $border-radius-sm
+      bottom: 100%
+      content: ""
+      height: 50px
+      left: 20px
+      position: absolute
+      transform: rotateZ(90deg)
